@@ -1,0 +1,443 @@
+$monitor:#828D76;
+$black:#595757;
+$button: #4176B0;
+$light-blue:#AECCE5;
+$blue:#A2C1E5;
+
+$pixel-size: 3.5px;
+$pixel-color-map: (
+  'o' : transparent,
+  'x': #595757
+);
+$pixel-image:(
+  num1:(
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,x,x,x,x,x,x,x,x,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,x,o,o,x,o,o,o,o,o,x,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,o,x,o,o,x,x,o,o,o,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,x,x,x,o,o,o,o,o,x,o,x,x,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,x,o,o,o,o,o,o,o,o,x,x,x,x,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,x,x,o,o,o,o,o,o,o,o,o,x,x,o,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,x,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,x,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,x,o,o,o,o,o,o,o,o,x,x,o,o,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,x,o,o,o,o,o,x,x,x,o,o,o,o,o,o,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,x,x,x,x,x,x,o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,x,o,o,o,o,o,o,o,o,o,o,o,o,x,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,x,x,x,x,x,x,o,o,o,o,o,o,o,x,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,x,x,x,o,o,o,o,o,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o,x,o,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,x,x,x,o,o,o,o,o,x,o,o,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,x,o,o,x,o,o,o,o,x,o,o,o,o,x,x,x,o,o,o)
+    (o,o,o,o,o,o,o,x,o,x,o,o,o,x,o,o,x,o,o,o,o,x,o,o,x,o,o,o)
+    (o,o,o,o,o,o,o,x,x,o,x,o,x,x,x,o,x,o,x,o,x,o,o,o,x,o,o,o)
+    (o,o,o,o,o,o,o,o,x,x,x,x,o,x,o,x,x,x,o,x,o,o,o,x,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,x,x,x,x,o,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,x,x,x,o,o,o,x,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,x,x,x,x,o,o,o,x,x,x,x,x,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,x,o,x,o,x,o,x,o,x,o,x,o,x,o,o,o,x,o,o,o,o)
+    (o,o,o,o,o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+  ),
+  num2: (
+    (o,o,o,o,o,o,o,o,o,x,x,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,x,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,x,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,x,o,x,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,x,o,o,x,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,x,o,x,x,x,x,x,o,o,x,x,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,x,x,o,o,o,o,o,x,x,o,o,o,x,x,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,o,x,o,o,x,x,o,o,o,x,x,x,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,o,o,o,x,o,x,x,o,o,o,x,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,x,x,o,o,o,o,x,x,x,x,o,o,o,o,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,x,x,x,o,o,o,o,o,x,x,o,o,o,o,x,x,x,o,o,o,o,o,o)
+    (o,o,o,o,o,x,o,o,o,o,o,o,o,o,o,o,o,o,x,x,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,x,x,x,x,x,x,x,x,o,o,o,o,o,o,o,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,x,o,o,o,o,o,x,o,o,o,o,o,o,x,o,o,o,x,x)
+    (o,o,o,o,o,o,o,o,o,x,x,x,x,x,o,x,o,o,o,o,x,o,o,x,o,x,o,x)
+    (o,o,o,o,o,o,o,o,x,o,x,o,x,o,o,o,x,o,o,o,x,o,x,x,x,o,o,x)
+    (o,o,o,o,o,o,o,o,x,o,x,o,x,x,x,o,x,o,x,x,x,o,o,x,o,o,x,o)
+    (o,o,o,o,o,o,o,o,x,o,x,o,x,o,o,x,x,x,o,o,x,o,o,o,x,o,x,o)
+    (o,o,o,o,o,o,o,o,x,o,x,x,o,o,o,o,x,o,o,o,x,o,o,x,x,x,o,o)
+    (o,o,o,o,o,o,o,x,x,x,o,x,o,o,o,o,x,o,x,x,x,x,o,o,x,x,o,o)
+    (o,o,o,o,o,o,o,x,o,x,o,x,o,o,o,o,x,x,o,o,x,x,o,o,x,o,o,o)
+    (o,o,o,o,o,o,x,x,x,o,o,x,x,o,o,x,o,o,o,o,x,x,x,o,x,o,o,o)
+    (o,o,o,o,o,o,x,o,x,o,x,x,o,x,o,x,o,o,o,o,x,o,x,o,x,o,o,o)
+    (o,o,o,o,o,o,x,o,x,o,x,o,o,o,x,x,o,o,o,o,o,x,x,x,o,o,o,o)
+    (o,o,o,o,o,x,o,x,x,x,o,o,o,x,x,x,x,x,x,x,x,o,x,o,o,o,o,o)
+    (o,o,o,o,o,x,x,o,x,o,x,o,x,o,x,o,x,o,x,o,x,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o,o,o,o)
+  ),
+  num3: (
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,x,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,x,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,x,x,o,x,x,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,x,x,x,x,o,x,x,x,x,x,x,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,x,x,x,o,x,x,x,o,o,o,x,x,x,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,x,x,o,o,x,x,o,o,o,o,o,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,o,o,o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,x,o,o,o,o,o,o,o,o,o,o,o,o,x,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,x,x,o,o,o,o,x,x,o,o,o,o,o,o,x,x,x,o,o,o,o)
+    (o,o,o,o,o,o,x,o,o,x,o,o,x,o,x,x,o,o,o,o,o,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,x,o,o,x,o,o,x,x,x,x,o,o,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,x,o,o,o,o,x,o,o,x,x,o,o,o,o,o,o,x,x,o,o,o,o,o)
+    (o,o,o,o,o,x,o,o,o,o,x,o,o,o,o,o,o,o,o,o,x,x,x,x,o,o,o,o)
+    (o,o,o,o,o,x,o,o,o,o,x,o,o,o,o,o,o,x,x,x,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,o,o,o,o,o,o,x,x,o,x,o,x,x,x,o,o,o)
+    (o,o,o,o,o,o,o,o,x,x,x,o,x,x,x,x,x,o,x,x,o,x,o,x,x,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,x,o,o,o,o,o,o,o,o,x,o,o,x,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,o,o,o,x,o,o,o,o,o,o,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,x,o,o,o,o,x,o,o,o,o,o,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,x,o,o,o,o,x,o,o,x,o,x,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,x,x,x,x,x,o,o,o,x,o,x,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,x,x,x,o,o,o,o,x,x,x,x,x,o,x,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,x,o,o,x,o,o,o,x,x,x,o,x,o,x,o,x,o,o,o,o,o)
+    (o,o,o,o,o,o,o,x,x,x,x,x,x,x,x,o,x,x,x,x,x,x,x,o,o,o,o,o)
+  ),
+  num4: (
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+    (o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)
+  )
+);
+
+@function pixelize($num) {
+  $image:nth($pixel-image,$num); //陣列裡的第幾個圖
+  $matrix:nth($image,2); //選定的圖形內容。($matrix1,1)會印出該圖得標題，因此選擇從2開始
+  $line:length($matrix); //圖形的一行有幾個pixels。
+  $sh:'';
+  @for $i from 1 through $line {
+    $row: nth($matrix,$i);
+    @for $j from 1 through length($row) {
+      $item: nth($row,$j);
+      
+      @if map-has-key($pixel-color-map, $item) {
+            $sh:  $sh + ($j*$pixel-size) + ' ' + ($i*$pixel-size) + ' ' + map-get($pixel-color-map, $item);
+          } @else {
+            @warn 'there is no color specified in "$pixel-color-map" for: "#{$item}"';
+          }
+
+      @if not ($j == length($row) and $i == $line) {
+          $sh: $sh + ',';
+        }
+    }
+  }
+  @return unquote($sh);
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #FFE99E;
+}
+.container {
+  position:relative;
+  top:50px;
+  width:500px;
+  height:500px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-shadow {
+  position:absolute;
+  width:150px;
+  height:30px;
+  border-radius:50%;
+  background: #E2D48F;
+  bottom:30px;
+}
+svg {
+  position:absolute;
+}
+	.st0{fill:#AAC7E4;}
+	.st1{fill:#ACC7E2;}
+	.st2{opacity:0.8;fill:url(#groove-right1-shadow_1_);}
+	.st3{fill:#898989;}
+	.st4{fill:#89A1B3;}
+	.st5{opacity:0.8;fill:url(#groove-left-shadow_1_);}
+	.st6{opacity:0.7;fill:#87A0B1;}
+	.st7{opacity:0.8;fill:url(#groove-right2-shadow_1_);}
+	.st8{opacity:0.12;}
+	.st9{opacity:0.7;}
+	.st10{fill:#9BB0C5;}
+	.st11{opacity:0.7;fill:#FFFFFF;}
+	.st12{opacity:0.7;fill:#9BB0C5;}
+	.st13{fill:#A0BFD1;}
+	.st14{fill:#727171;
+}
+
+.center {
+  position:absolute;
+  width:210px;
+  height:210px;
+  .circle01 {
+    top:-4.5px;
+    left:-4.35px;
+    position:absolute;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    box-shadow:inset -4px 4px .8px rgba(black, .09),3px -3px .2px rgba($light-blue,1),inset 2px -4px .3px rgba(white, .25),inset 3px 3px .6px rgba(black,.05);
+    .circle01-shadow {
+      position:absolute;
+      width:90%;
+      height:90%;
+      border-radius:50%;
+      top:5%;
+      left:5%;
+      background: #000;
+      box-shadow:-4px 4px .6px rgba(black,.2),4px 4px .6px rgba(black,.2),5.5px -4.5px .6px rgba(black,.1);
+    }
+  }
+  #layer2 {
+    left:-82px;
+    top:-44px;
+    width:360px;
+    height:290px;
+  }
+  .circle02 {
+    position:absolute;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background: #AAC7E3;
+    box-shadow:inset -3px 2px 0.6px rgba(black,.1),inset 3px -3px 0.6px rgba(white,.5);
+    top:29.5px;
+    left:32.5px;
+    .circle03 {
+      position:absolute;
+      width:92%;
+      height:92%;
+      top:4%;
+      left:4%;
+      border-radius:50%;
+      background: $black;
+      box-shadow:2px -2px 0.2px rgba(black,.2);
+      .monitor {
+        position:absolute;
+        width:78%;
+        height:78%;
+        top:11%;
+        left:11%;
+        border-radius:20px;
+        background: $monitor;
+        box-shadow:inset -3px 2px 0.4px rgba(black,.15);
+        .monitor-image {
+          position:absolute;
+          width:$pixel-size;
+          height:$pixel-size;
+          top:6px-$pixel-size;
+          left:6px-$pixel-size;
+        }
+        .pixel-1 {
+          box-shadow:pixelize(1);
+          animation: blink1 1s infinite;
+          animation-timing-function: ease;
+        }
+        .pixel-2 {
+          box-shadow:pixelize(2);
+          animation: blink2 1s infinite;
+          animation-timing-function: ease;
+        }
+        .pixel-3 {
+          box-shadow:pixelize(3);
+          animation: blink3 1s infinite;
+          animation-timing-function: ease;
+        }
+        @keyframes blink1 {
+          0%   {box-shadow:pixelize(1);}
+          50% {box-shadow:pixelize(4);}
+          100% {box-shadow:pixelize(1);}
+        }
+        @keyframes blink2 {
+          0%   {box-shadow:pixelize(2);}
+          50% {box-shadow:pixelize(4);}
+          100% {box-shadow:pixelize(2);}
+        }
+        @keyframes blink3 {
+          0%   {box-shadow:pixelize(3);}
+          50% {box-shadow:pixelize(4);}
+          100% {box-shadow:pixelize(3);}
+        }
+      }
+    }
+    .circle03-shadow {
+      position:absolute;
+      width:92%;
+      height:92%;
+      top:4%;
+      left:4%;
+      border-radius:50%;
+      box-shadow:inset -4px 4px 0.6px rgba(black,.2),inset 2px -1px 0.5px rgba(black,.12);
+    }
+  }
+}
+
+.button-container {
+  position:absolute;
+  width:300px;
+  height:300px;
+  .button-left-bottom {
+    position:absolute;
+    top:120px;
+    left:15px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background: #A0BBD2;
+    box-shadow:inset -3px 3px 0.5px rgba(black,.2),inset 0px -2px 0.2px rgba($light-blue,.7);
+    .button-left {
+      position:absolute;
+      top:3px;
+      left:3px;
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      background: $button;
+      &:hover {
+        cursor:pointer;
+      }
+      &:focus, &:active {
+        top:4px;
+        left:4px;
+        width:48px;
+        height:48px;
+      }
+    }
+    .button-left::before {
+      position:absolute;
+      content:'';
+      width:80%;
+      height:80%;
+      border-radius:50%;
+      box-shadow:inset -2px 2px .4px rgba(black, .1),inset 2px -2px .4px rgba($light-blue, .1);
+      top:10%;
+      left:10%;
+    }
+    .button-left::after {
+      position:absolute;
+      content:'';
+      width:50%;
+      height:50%;
+      border-radius:50%;
+      box-shadow:-2px 1px .6px rgba(black, .1),inset -1.5px 1px 0px rgba($light-blue, .2);
+      top:25%;
+      left:25%;
+    }
+  }
+  .button-right01 {
+    position:absolute;
+    width:50px;
+    height:40px;
+    border-radius:50%;
+    background: $button;
+    right:15px;
+    top:100px;
+    &:hover {
+      cursor:pointer;
+    }
+    &:active, &:focus {
+      width:48px;
+      height:38px;
+      right:15px;
+      top:101px;
+    }
+  }
+  .button-right01::before {
+    position:absolute;
+    content:'';
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    box-shadow:inset -2px 2px .4px rgba(black, .1),inset 2px -2px .4px rgba($light-blue, .1);
+    top:10%;
+    left:10%;
+  }
+  .button-right01::after {
+    position:absolute;
+    content:'';
+    width:50%;
+    height:50%;
+    border-radius:50%;
+    box-shadow:-2px 1px .6px rgba(black, .1),inset -1.5px 1px 0px rgba($light-blue, .2);
+    top:25%;
+    left:25%;
+  }
+  .button-right02 {
+    position:absolute;
+    position:absolute;
+    width:50px;
+    height:40px;
+    border-radius:50%;
+    background: $button;
+    box-shadow:inset -1.5px 1px 0px rgba($light-blue, .4);
+    right:15px;
+    top:157px;
+    &:hover {
+      cursor:pointer;
+    }
+    &:active, &:focus {
+      width:48px;
+      height:38px;
+      right:15px;
+      top:158px;
+    }
+  }
+  .button-right02::before {
+    position:absolute;
+    content:'';
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    box-shadow:inset -2px 2px .4px rgba(black, .1),inset 2px -2px .4px rgba($light-blue, .1);
+    top:10%;
+    left:10%;
+  }
+  .button-right02::after {
+    position:absolute;
+    content:'';
+    width:50%;
+    height:50%;
+    border-radius:50%;
+    box-shadow:-2px 1px .6px rgba(black, .1),inset -1.5px 1px 0px rgba($light-blue, .2);
+    top:25%;
+    left:25%;
+  }
+  
+}
+
