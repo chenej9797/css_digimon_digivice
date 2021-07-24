@@ -1,21 +1,21 @@
 {
-  "name": "digimon_digivice",
+  "name": "css_digimon_digivice",
   "version": "1.0.0",
-  "description": "https://chenej9797.github.io/Digimon_Digivice/",
+  "description": "https://chenej9797.github.io/css_digimon_digivice/",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenej9797/Digimon_Digivice.git"
+    "url": "git+https://github.com/chenej9797/css_digimon_digivice.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chenej9797/Digimon_Digivice/issues"
+    "url": "https://github.com/chenej9797/css_digimon_digivice/issues"
   },
-  "homepage": "https://github.com/chenej9797/Digimon_Digivice#readme",
+  "homepage": "https://github.com/chenej9797/css_digimon_digivice#readme",
   "devDependencies": {
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",

@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/Digimon_Digivice/'
+    publicPath: '/css_digimon_digivice/'
   },
   module: {
     rules: [
